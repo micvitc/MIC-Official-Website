@@ -13,8 +13,8 @@ export default function Landing() {
   const [showSplash, setShowSplash] = useState(false);
 
   const router = useRouter();
-  const splashTimeoutRef = useRef<NodeJS.Timeout>();
-  const navigationTimeoutRef = useRef<NodeJS.Timeout>();
+  const splashTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
+  const navigationTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   const handleInsert = () => {
     setInserted(true);

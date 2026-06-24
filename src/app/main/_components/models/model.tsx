@@ -10,7 +10,7 @@ import { useGLTF } from "@react-three/drei";
 
 const Model = forwardRef<
   THREE.Group,
-  JSX.IntrinsicElements["group"]
+  React.JSX.IntrinsicElements["group"]
 >(function Model(props, ref) {
   const { nodes, materials } = useGLTF(
     "/mic-website-hero.glb"
